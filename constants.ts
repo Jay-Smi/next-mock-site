@@ -16,7 +16,7 @@ export const PROJECTS: {
     title: 'Interactiv',
     category: 'Drag and Drop App',
     techStack: ['nextjs', 'react', 'typescript', 'tailwind', 'html', 'css'],
-    source: '//interactiv.vercel.app/',
+    source: 'https://interactiv.jsmigen.dev/',
   },
   {
     image: battleship,

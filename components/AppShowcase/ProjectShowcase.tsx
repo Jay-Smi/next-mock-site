@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import { Accordion, Collapse, Container, Stack } from '@mantine/core';
-import { useScrollIntoView } from '@mantine/hooks';
+import { Collapse, Container, Stack } from '@mantine/core';
 import { useAppShellStore } from '../layout/hooks/useAppShellStore';
 import { Welcome } from '../Welcome/Welcome';
 import { ProjectCarousel } from './ProjectCarousel/ProjectCarousel';
