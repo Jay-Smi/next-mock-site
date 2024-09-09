@@ -1,5 +1,5 @@
 import { Icon } from '@iconify/react';
-import { rem, Tabs, TabsListProps, TabsProps, TabsTabProps } from '@mantine/core';
+import { rem, Tabs, TabsListProps, TabsProps, TabsTabProps, useMatches } from '@mantine/core';
 import { useHash } from '@mantine/hooks';
 import { useAppShellStore } from './hooks/useAppShellStore';
 
@@ -33,6 +33,10 @@ export const RouteTabs = ({ listProps, tabProps, ...props }: RouteTabsProps) => 
   // ** global state **
   const [hash, setHash] = useHash();
   const { mainScrollAreaRef, closeNavbar } = useAppShellStore();
+  const isMobile = useMatches({
+    base: true,
+    sm: false,
+  });
 
   // ** local state ** //
 
@@ -48,7 +52,7 @@ export const RouteTabs = ({ listProps, tabProps, ...props }: RouteTabsProps) => 
   };
 
   return (
-    <Tabs {...props} value={removeHashtag(hash)} onChange={handleScroll}>
+    <Tabs {...props} value={isMobile ? '' : removeHashtag(hash)} onChange={handleScroll}>
       <Tabs.List {...listProps}>
         {ROUTES.map(({ value, label, leftSection }) => (
           <Tabs.Tab

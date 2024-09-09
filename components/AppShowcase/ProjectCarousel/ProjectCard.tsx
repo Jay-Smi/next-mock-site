@@ -55,7 +55,7 @@ export function ProjectCard({
           Preview Project
         </Button>
 
-        <Box className={classes.stack}>
+        <Box className={classes.stack} visibleFrom="xs">
           <TechStack techStack={techStack} />
         </Box>
 

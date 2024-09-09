@@ -16,20 +16,20 @@ export const PROJECTS: {
     title: 'Interactiv',
     category: 'Drag and Drop App',
     techStack: ['nextjs', 'react', 'typescript', 'tailwind', 'html', 'css'],
-    source: 'https://interactiv.vercel.app/',
+    source: '//interactiv.vercel.app/',
   },
   {
     image: battleship,
     title: 'Battleship',
     category: 'Game',
     techStack: ['javascript', 'html', 'css'],
-    source: 'https://jay-smi.github.io/battleship/',
+    source: '//jay-smi.github.io/battleship/',
   },
   {
     image: guildgenius,
     title: 'Guild Genius',
     category: 'Member Management App',
     techStack: ['nextjs', 'typescript', 'react', 'tailwind', 'discordjs'],
-    source: 'https://guild-genius-app.vercel.app/',
+    source: '//guild-genius-app.vercel.app/',
   },
 ];
