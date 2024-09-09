@@ -4,4 +4,4 @@ export default {
   title: 'Welcome',
 };
 
-export const Usage = () => <Welcome />;
+export const Usage = () => <Welcome id="1234" />;
