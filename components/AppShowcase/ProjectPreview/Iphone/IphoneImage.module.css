@@ -1,0 +1,9 @@
+.translate {
+  @mixin dark {
+    transform: translateX(198.5px);
+  }
+
+  @mixin light {
+    transform: translateX(-196px);
+  }
+}
